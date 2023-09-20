@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITNOVUS</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                    <img src="VITNovusLogo.jpeg" class="logo">
+                <h1>VITNOVUS</h1>
+                <ul>
+                    <li class="dropdown">
+                        <a href="index.html" name = 'index'>Home</a>
+                        <div class="dropdown-content">
+                            <button class="dropdown-btn" onclick="document.location='reviews.html'">See Reviews</button>
+                            <button class="dropdown-btn">Help Box </button>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Restaurant</a>
+                        <div class="dropdown-content">
+                            <button class="dropdown-btn" onclick="document.location='foodcourt.html'">Food Court</button>
+                            <button class="dropdown-btn" onclick="document.location='hns.html'">Hangy & Swig</button>
+                            <button class="dropdown-btn" onclick="document.location='buddys.html'">Buddy's Bites</button>
+                            <button class="dropdown-btn" onclick="document.location='cafe.html'">DC Cafe</button>
+                            <button class="dropdown-btn" onclick="document.location='enzo.html'">Enzo</button>
+                            <button class="dropdown-btn" onclick="document.location='onefood.html'">One Food World</button>
+                            <button class="dropdown-btn" onclick="document.location='arsan.html'">Arasan</button>
+                            <button class="dropdown-btn" onclick="document.location='canteen.html'">Darling Canteen</button>
+                            <button class="dropdown-btn" onclick="document.location='quickbites.html'">Quick Bites</button>
+
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Order</a>
+                        <div class="dropdown-content">
+                            <button class="dropdown-btn">Online Order</button>
+                            <button class="dropdown-btn">Phone Order</button>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Authentic Food</a>
+                        <div class="dropdown-content">
+                            <button class="dropdown-btn" onclick="document.location=''">Explore</button>
+                            <button class="dropdown-btn">About</button>
+                        </div>
+                    <li class="dropdown">
+                        <a href="#">Sign Up</a>
+                        <div class="dropdown-content">
+                            <button class="dropdown-btn" onclick="document.location='register.html'">Register Now</button>
+                            <button class="dropdown-btn">Login</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2><span class="highlight-text">Delicious Food Delivered To Your Doorstep.</span></h2>
+            <p class="black-text">Order Now</p>
+            <form class="search-form" action="{% url 'save_input_to_txt' %}" method="POST">
+            <input type="text" name="query" placeholder="Search for meals...">
+            {% csrf_token %}
+            <button type="submit">Search</button>
+        </form>
+        </div>
+    </section>
+    <section class="contact-info">
+    <div class="container">
+        <p>Contact Us:</p>
+        <p>Email: vitnovus@gmail.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+    </div>
+</section>  
+</body>
+</html>
+
