@@ -38,7 +38,7 @@
                     <li class="dropdown">
                         <a href="#">Order</a>
                         <div class="dropdown-content">
-                            <button class="dropdown-btn">Online Order</button>
+                            <button class="dropdown-btn" onclick="document.location='onlineorder.html'">Online Order</button>
                             <button class="dropdown-btn">Phone Order</button>
                         </div>
                     </li>
@@ -62,7 +62,7 @@
 
     <section class="hero">
         <div class="container">
-            <h2><span class="highlight-text">Delicious Food Delivered To Your Doorstep.</span></h2>
+            <h2><span class="highlight-text">Happiness, Delivered to your Doorstep.</span></h2>
             <p class="black-text">Order Now</p>
             <form class="search-form" action="{% url 'save_input_to_txt' %}" method="POST">
             <input type="text" name="query" placeholder="Search for meals...">

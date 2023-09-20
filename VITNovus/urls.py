@@ -33,6 +33,7 @@ urlpatterns = [
     path('hns.html',views.hns),
     path('onefood.html',views.onefood),
     path('quickbites.html',views.quickbites),
+    path('onlineorder.html',views.onlineorder),
     path('save-input/', views.save_input_to_txt, name='save_input_to_txt')
 
 ]

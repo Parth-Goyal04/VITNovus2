@@ -41,6 +41,9 @@ def onefood(request):
 def quickbites(request):
     return render(request, "quickbites.html")
 
+def onlineorder(request):
+    return render(request, "onlineorder.html")
+
 def save_input_to_txt(request):
     if request.method == 'POST':
         query = request.POST.get('query', '')
