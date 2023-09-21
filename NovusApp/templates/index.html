@@ -62,13 +62,14 @@
 
     <section class="hero">
         <div class="container">
+            <a href="calculate_sum.html">Click Here to Access Vendor Landing</a>
             <h2><span class="highlight-text">Happiness, Delivered to your Doorstep.</span></h2>
             <p class="black-text">Order Now</p>
-            <form class="search-form" action="{% url 'save_input_to_txt' %}" method="POST">
-            <input type="text" name="query" placeholder="Search for meals...">
-            {% csrf_token %}
-            <button type="submit">Search</button>
-        </form>
+            <form class="search-form" action="{% url 'check_food_in_restaurant' %}" method="POST">
+                <input type="text" name="query" placeholder="Search for meals...">
+                {% csrf_token %}
+                <button type="submit">Search</button>
+            </form>
         </div>
     </section>
     <section class="contact-info">

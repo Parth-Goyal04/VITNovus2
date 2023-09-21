@@ -71,7 +71,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-}
+
 /* Dropdown menu styles */
 .dropdown {
     position: relative;
@@ -156,4 +156,56 @@ footer {
 
 .dropdown-content .dropdown-btn:hover {
     background-color: #c0392b; /* Button background color on hover */
+}
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for table headers (th) */
+th {
+    background-color: #3498db; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 10px;
+    text-align: centre;
+}
+
+/* Style for table rows (even rows) */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Even row background color */
+}
+
+/* Style for table rows (odd rows) */
+tr:nth-child(odd) {
+    background-color: #ffffed; /* Odd row background color */
+}
+
+/* Style for table data cells (td) */
+td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Border color for table cells */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #3498db; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+/* Style for the Submit Button */
+.submit-btn {
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin: 10px 0; /* Add margin to separate the button from the search bars */
+}
+
+.submit-btn:hover {
+    background-color: #2980b9; /* Button background color on hover */
 }

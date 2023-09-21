@@ -34,6 +34,8 @@ urlpatterns = [
     path('onefood.html',views.onefood),
     path('quickbites.html',views.quickbites),
     path('onlineorder.html',views.onlineorder),
+    path('integrate.html', views.dbms, name='check_food_in_restaurant'),
+    path('VendorLanding.html',views.VendorLanding),
+    path('calculate_sum/', views.calculate_sum, name='calculate_sum'),
     path('save-input/', views.save_input_to_txt, name='save_input_to_txt')
-
 ]
